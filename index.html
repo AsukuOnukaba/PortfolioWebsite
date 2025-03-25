@@ -43,7 +43,7 @@
 			transform: scaleX(-1); /* Ensures the video covers its container without distortion */
 		}
 }
-		@media (max-width: 1199px) {
+		@media (max-width: 1100px) {
 			.video-container{
 				display: none;
 			}
@@ -81,8 +81,13 @@
 	        <div class="container">
 	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
 				<div class="video-container">
-					<video src="images/hacker-typer.1920x1080.mp4" autoplay muted loop></video>
-				</div>
+					<video autoplay muted loop playsinline>
+						<source src="images/hacker-typer.1920x1080.mp4" type="video/mp4">
+						<source src="images/hacker-typer.1920x1080.webm" type="video/webm">
+						<source src="images/hacker-typer.1920x1080.ogg" type="video/ogg">
+						Your browser does not support the video tag.
+					</video>
+				</div>				
 				<div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 		          	<div class="text">
 		          		<span class="subheading">Hello!</span>
@@ -173,65 +178,70 @@
     	</div>
     </section>
 
-    <section class="ftco-section ftco-no-pb" id="resume-section">
-    	<div class="container">
-    		<div class="row justify-content-center pb-5">
-          <div class="col-md-10 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Resume</h1>
-            <h2 class="mb-4">Resume</h2>
-            <p>"The end is the beginning, and the beginning is the end."</p>
-          </div>
-        </div>
-    		<div class="row">
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2014-2015</span>
-    					<h2>Master Degree of Design</h2>
-    					<span class="position">Cambridge University</span>
-    					<p class="mt-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-    				</div>
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2014-2015</span>
-    					<h2>Bachelor's Degree of C.A</h2>
-    					<span class="position">Cambridge University</span>
-    					<p class="mt-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-    				</div>
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2014-2015</span>
-    					<h2>Diploma in Computer</h2>
-    					<span class="position">Cambridge University</span>
-    					<p class="mt-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-    				</div>
-    			</div>
-
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2014-2015</span>
-    					<h2>Art &amp; Creative Director</h2>
-    					<span class="position">Cambridge University</span>
-    					<p class="mt-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-    				</div>
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2014-2015</span>
-    					<h2>Wordpress Developer</h2>
-    					<span class="position">Cambridge University</span>
-    					<p class="mt-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-    				</div>
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2017-2018</span>
-    					<h2>UI/UX Designer</h2>
-    					<span class="position">Cambridge University</span>
-    					<p class="mt-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-    				</div>
-    			</div>
-    		</div>
-    		<div class="row justify-content-center mt-5">
-    			<div class="col-md-6 text-center ftco-animate">
-    				<p><a href="./Resume.pdf" class="btn btn-primary py-4 px-5" download="Resume.pdf">Download CV</a></p>
-    			</div>
-    		</div>
-    	</div>
-    </section>
+	<section class="ftco-section ftco-no-pb" id="resume-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-10 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Resume</h1>
+					<h2 class="mb-4">Resume</h2>
+					<p>"The end is the beginning, and the beginning is the end."</p>
+				</div>
+			</div>
+	
+			<div class="row">
+				<!-- Left Column -->
+				<div class="col-md-4 d-flex justify-content-center">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2021 - 2022</span>
+						<h2>Web Designer & IT Support Engineer</h2>
+						<span class="position">Kith and Charm, Abuja, Nigeria</span>
+						<p class="mt-4">
+							Diagnosed and resolved computer hardware and network issues, ensuring minimal downtime.  
+							Managed IT asset inventory, including procurement, installation, and retirement.  
+							Contributed to the UI/UX design of an e-commerce website, developing an intuitive and visually appealing 
+							interface to enhance user experience and engagement.
+						</p>
+					</div>
+				</div>
+	
+				<!-- Centered Card -->
+				<div class="col-md-4 d-flex justify-content-center">
+					<div class="resume-wrap ftco-animate text-center">
+						<span class="date">2023 - 2024</span>
+						<h2>Web Developer / Instructor</h2>
+						<span class="position">The Training Centre, Abuja, Nigeria</span>
+						<p class="mt-4">
+							Delivered comprehensive web development training to diverse learner groups, designing and teaching 
+							engaging courses to foster skill development. Led the complete redesign of the company website, 
+							improving user experience and functionality.
+						</p>
+					</div>
+				</div>
+	
+				<!-- Right Column -->
+				<div class="col-md-4 d-flex justify-content-center">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2024 - Present</span>
+						<h2>Technical Specialist & Web Developer</h2>
+						<span class="position">Emerald Industrial CFZE, Lagos, Nigeria</span>
+						<p class="mt-4">
+							Managing and maintaining the company website, ensuring optimal performance and user experience.  
+							Assisting in IT support, including system updates, troubleshooting, and hardware/software management.  
+							Enhancing brand presence by creating engaging digital content and social media strategies aligned with 
+							the company's target audience.
+						</p>
+					</div>
+				</div>
+			</div>
+	
+			<div class="row justify-content-center mt-5">
+				<div class="col-md-6 text-center ftco-animate">
+					<p><a href="./Asuku-V2.pdf" class="btn btn-primary py-4 px-5" download="Resume.pdf">Download CV</a></p>
+				</div>
+			</div>
+		</div>
+	</section>
+	
 
     <section class="ftco-section" id="services-section">
     	<div class="container">
@@ -322,6 +332,17 @@
 					<div class="col-md-6 animate-box">
 						<div class="progress-wrap ftco-animate">
 							<h3>JavaScript</h3>
+							<div class="progress">
+							 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="80"
+							  	aria-valuemin="0" aria-valuemax="100" style="width:80%">
+							    <span>80%</span>
+							  	</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="progress-wrap ftco-animate">
+							<h3>TypeScript</h3>
 							<div class="progress">
 							 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="80"
 							  	aria-valuemin="0" aria-valuemax="100" style="width:80%">
@@ -431,7 +452,7 @@
 					</div>
 					<div class="col-md-6 animate-box">
 						<div class="progress-wrap ftco-animate">
-							<h3>AWS</h3>
+							<h3>Cloud Computing - AWS</h3>
 							<div class="progress">
 							 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
 							  	aria-valuemin="0" aria-valuemax="100" style="width:80%">
@@ -502,6 +523,61 @@
 							 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="85"
 							  	aria-valuemin="0" aria-valuemax="100" style="width:85%">
 							    <span>85%</span>
+							  	</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="progress-wrap ftco-animate">
+							<h3>Angular</h3>
+							<div class="progress">
+							 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="85"
+							  	aria-valuemin="0" aria-valuemax="100" style="width:85%">
+							    <span>85%</span>
+							  	</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="progress-wrap ftco-animate">
+							<h3>NextJS</h3>
+							<div class="progress">
+							 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="85"
+							  	aria-valuemin="0" aria-valuemax="100" style="width:85%">
+							    <span>85%</span>
+							  	</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="progress-wrap ftco-animate">
+							<h3>OOP</h3>
+							<div class="progress">
+							 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="85"
+							  	aria-valuemin="0" aria-valuemax="100" style="width:85%">
+							    <span>80%</span>
+							  	</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="progress-wrap ftco-animate">
+							<h3>PHP/Lavarel</h3>
+							<div class="progress">
+							 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="85"
+							  	aria-valuemin="0" aria-valuemax="100" style="width:85%">
+							    <span>80%</span>
+							  	</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="progress-wrap ftco-animate">
+							<h3>Software Development Fundamentals</h3>
+							<div class="progress">
+							 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="85"
+							  	aria-valuemin="0" aria-valuemax="100" style="width:85%">
+							    <span>90%</span>
 							  	</div>
 							</div>
 						</div>
@@ -760,7 +836,7 @@
 				<div class="row justify-content-center">
 					<div class="col-md-7 ftco-animate text-center">
 						<h2>I'm <span>Available</span> for freelancing</h2>
-						<p><q>Power belongs to those who take it.</q></p>
+						<p style="color: white;"><q>Power belongs to those who take it.</q></p>
 						<p class="mb-0"><a href="#" class="btn btn-primary py-3 px-5">Hire me</a></p>
 					</div>
 				</div>
