@@ -1003,7 +1003,7 @@
   <script src="js/main.js"></script>
   <script src="js/data.js"></script>
   
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script>
     (function() {
         document.getElementById("contact-form").addEventListener("submit", function(event) {
@@ -1017,7 +1017,34 @@
                 });
         });
     })();
+</script> -->
+<!-- Include EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        emailjs.init("g31j_fvHycUc2SaXo"); // Add your public key here
+
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            const btn = document.querySelector('input[type="submit"]');
+            btn.value = "Sending..."; // Indicate that the email is being sent
+
+            emailjs.sendForm("service_2rwbyo6", "template_az0tlqi", this)
+                .then(() => {
+                    btn.value = "Sent"; // Reset button text
+                    // alert("Message sent successfully!");
+                    this.reset(); // Clear form fields after sending
+                }, (err) => {
+                    btn.value = "Failed"; // Reset button text
+                    // alert("Failed to send message: " + JSON.stringify(err));
+					this.reset(); // Clear form fields after sending
+                });
+        });
+    });
 </script>
+
 
   </body>
 </html>
