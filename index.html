@@ -1036,6 +1036,7 @@
                     btn.value = "Sent"; // Reset button text
                     // alert("Message sent successfully!");
                     this.reset(); // Clear form fields after sending
+					btn.value = "Sent";
                 }, (err) => {
                     btn.value = "Failed"; // Reset button text
                     // alert("Failed to send message: " + JSON.stringify(err));
@@ -1044,7 +1045,5 @@
         });
     });
 </script>
-
-
   </body>
 </html>
