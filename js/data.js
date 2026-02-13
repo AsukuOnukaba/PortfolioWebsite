@@ -63,7 +63,12 @@ document.addEventListener("DOMContentLoaded", function () {
             if (imageUrl.includes('images/ITCentre.png')) {
                 // For the specific image, show a clickable link
                 modalTextContainer.innerHTML = `<a href="https://it-centre-website-demo.vercel.app/" target="_blank" style="color: white; text-decoration: underline;">Live Demo</a>`;
-            } else {
+            } 
+            else if (imageUrl.includes('images/bridgetech.png')) {
+                // For the specific image, show a clickable link
+                modalTextContainer.innerHTML = `<a href="https://bridgetechco.com/" target="_blank" style="color: white; text-decoration: underline;">Live Demo</a>`;
+            } 
+            else {
                 // For other images, show regular text
                 modalTextContainer.textContent = 'Click anywhere to close this popup.';
             }
